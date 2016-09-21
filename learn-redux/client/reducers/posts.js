@@ -6,13 +6,13 @@
 
 // what happened
 // action, store
-
 // okay let me see
-
-
 // store
 
+//the reducer actually does the editing of state
+
 function posts(state = [], action){
+  console.log("The post will change")
   console.log(state, action);
   return state
 }

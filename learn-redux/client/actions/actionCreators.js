@@ -1,3 +1,6 @@
+// action is an object with some information about what happened
+// and what needs to change
+
 //increment
 export function increment(index) {
   return {
