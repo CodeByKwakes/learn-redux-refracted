@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Photo = React.createClass({
+const PhotoGrid = React.createClass({
   render() {
     return (
       <div className="photo-grid">
@@ -19,4 +19,4 @@ const Photo = React.createClass({
 //   </div>
 // )
 
-export default Photo;
+export default PhotoGrid;
