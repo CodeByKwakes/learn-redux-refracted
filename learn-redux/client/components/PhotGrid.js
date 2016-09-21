@@ -1,10 +1,11 @@
 import React from 'react'
+import Photo from './Photo'
 
 const PhotoGrid = React.createClass({
   render() {
     return (
       <div className="photo-grid">
-        I'm the photo grid
+       {this.props.posts.map((post, index) => <Photo {...this.props} key={index} i={index} post={post}/>)}
       </div>
     )
   }
@@ -18,5 +19,10 @@ const PhotoGrid = React.createClass({
 //     </h1>
 //   </div>
 // )
+
+// cant use the below to display JSON format on the page
+  // <pre>
+  //   { JSON.stringify(this.props.posts, null, ' ') }
+  // </pre>
 
 export default PhotoGrid;
