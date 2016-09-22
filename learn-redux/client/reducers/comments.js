@@ -7,7 +7,7 @@ function postComments(state = [], action) {
         text: action.comment
       }]
     case 'REMOVE_COMMENT':
-    console.log("Removing a comment")
+    // console.log("Removing a comment")
     // we need to return the new state without the deleted comment
     return [
       // from the start to the one we want to delete

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Comments = React.createClass({
   renderComment(comment, i){
-    console.log(comment)
+    // console.log(comment)
     return (
       <div className="comment" key={i}>
         <p>
@@ -15,7 +15,7 @@ const Comments = React.createClass({
   },
   handleSubmit(e){
     e.preventDefault()
-    console.log("Submiting the form!!")
+    // console.log("Submiting the form!!")
     // console.log(this.refs)
     const { postId } = this.props.params
     const author = this.refs.author.value
