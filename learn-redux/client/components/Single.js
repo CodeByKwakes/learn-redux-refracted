@@ -11,12 +11,13 @@ const Single = React.createClass({
     console.log(i)
     const post = this.props.posts[i]
     console.log(post)
+    const postComments = this.props.comments[postId] || []
    
     // get us the post
     return (
       <div className="single-photo">
          <Photo i={i} post={post} {...this.props} />
-         <Comments />
+         <Comments postComments={postComments} />
       </div>
     )
   }
